@@ -75,9 +75,9 @@ En este apartado se encuentra la documentación del **Event Storming** para el L
 
     - Entre las líneas 113 y 141 se encuentra definido el MapContext para el AS_IS
 
-    - En la carpeta **src/main/resources** podrás encontrar el archivo **salud_tech_as_is_ContextMap.png** el cual es la imagen generada por el MapContext para el AS_IS
-
     ![alt text](image-8.png)
+
+    - En la carpeta **src/main/resources** podrás encontrar el archivo [**salud_tech_as_is_ContextMap.png**](https://github.com/JGarcia55/DDDLovers/blob/master/src/main/resources/salud_tech_as_is_ContextMap.png) el cual es la imagen generada por el MapContext para el AS_IS
     
 - [Enlace a archivo .cml con los contextos acotados y el MapContext para el TO_BE](https://github.com/JGarcia55/DDDLovers/blob/master/src/main/cml/salud_tech_to_be.cml)
 
@@ -93,7 +93,7 @@ En este apartado se encuentra la documentación del **Event Storming** para el L
 
     ![alt text](image-8.png)
 
-    - En la carpeta **src/main/resources** podrás encontrar el archivo **salud_tech_to_be_ContextMap.png** el cual es la imagen generada por el MapContext para el TO_BE
+    - En la carpeta **src/main/resources** podrás encontrar el archivo [**salud_tech_to_be_ContextMap.png**](https://github.com/JGarcia55/DDDLovers/blob/master/src/main/resources/salud_tech_to_be_ContextMap.png) el cual es la imagen generada por el MapContext para el TO_BE
 
 ## Colaboradores
 
