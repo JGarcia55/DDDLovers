@@ -1,0 +1,141 @@
+Domain DataParnership {
+    domainVisionStatement = "Proveer una plataforma segura y confiable que permita a los proveedores de salud compartir datos anonimizados, garantizando el cumplimiento de regulaciones de privacidad, y recibir compensación basada en el nivel de uso de los datos por parte de los clientes de la plataforma."
+
+    Subdomain AlmacenamientoEnLaNube {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Proveer una infraestructura segura y escalable para el almacenamiento de datos médicos anonimizados, asegurando accesibilidad y eficiencia en la gestión de información."
+    }
+
+    Subdomain RecepcionYProcesamientoDeDatos {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Facilitar la integración de datos médicos desde diversas fuentes, asegurando su correcta estructuración y almacenamiento para su posterior procesamiento dentro del ecosistema de STA."
+    }
+
+    Subdomain AnonimizacionDeDatos {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Proteger la privacidad del paciente mediante la eliminación de información sensible en imágenes médicas y metadatos, garantizando el cumplimiento de normativas como HIPAA y GDPR."
+    }
+
+    Subdomain VerificacionYMapeoDeDatos {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Asegurar la calidad y organización de los datos anonimizados a través de procesos de validación y mapeo inteligente, permitiendo su categorización por modalidad, región anatómica y condición patológica."
+    }
+
+    Subdomain EjecucionDePipelinesYModelos {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Optimizar el procesamiento de imágenes médicas mediante la ejecución de modelos de IA específicos, generando datos estructurados que pueden ser utilizados para análisis e investigación."
+    }
+
+    Subdomain PersistenciaDeDatos {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Permitir la vinculación de datos clínicos anonimizados con historiales médicos a través de identificadores únicos, facilitando estudios longitudinales sin comprometer la identidad del paciente."
+    }
+}
+
+Domain DesarrolladoresIA {
+    domainVisionStatement = "Facilitar el desarrollo y entrenamiento de modelos de inteligencia artificial mediante productos y servicios que ofrecen acceso a datos anonimizados, ambientes configurables en la nube, y soporte especializado para satisfacer las necesidades de clientes en diferentes niveles: auto-servicio, administración avanzada y soporte dedicado."
+
+    Subdomain STAStandard {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Ofrecer una plataforma de auto-servicio con acceso instantáneo a datos anonimizados, permitiendo a los desarrolladores e investigadores de IA buscar, filtrar y descargar información relevante para el entrenamiento de modelos."
+    }
+
+    Subdomain STAPro {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Proveer un entorno en la nube completamente administrable por el cliente, permitiendo consultas SQL avanzadas y acceso personalizado a datasets dedicados, optimizando el desarrollo y entrenamiento de modelos de IA."
+    }
+
+    Subdomain STAEnterprise {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Brindar un ecosistema integral que combine acceso a datos, herramientas avanzadas y soporte de expertos para clientes con necesidades específicas de personalización en el desarrollo de modelos de IA."
+    }
+
+    Subdomain GestionDeUsuariosYCuentas {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Facilitar la administración de usuarios, suscripciones y permisos dentro de la plataforma, garantizando un acceso controlado y seguro a los diferentes niveles de servicio ofrecidos por STA."
+    }
+
+    Subdomain GestionDeVentasYClientes {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Facilitar la adquisición y gestión de clientes a través de procesos de contacto comercial, negociación y personalización de servicios según las necesidades específicas de cada cliente."
+    }
+    
+}
+
+BoundedContext AlmacenamientoEnLaNubeContext implements AlmacenamientoEnLaNube {
+    domainVisionStatement = "Este contexto gestiona la infraestructura de almacenamiento seguro y escalable en la nube, asegurando la disponibilidad y accesibilidad de los datos procesados y anonimizados."
+}
+
+BoundedContext RecepcionYProcesamientoDeDatosContext implements RecepcionYProcesamientoDeDatos {
+    domainVisionStatement = "Este contexto se encarga de la recepción y estructuración de datos médicos provenientes de diferentes fuentes, garantizando su correcto procesamiento previo a la anonimización."
+}
+
+BoundedContext AnonimizacionDeDatosContext implements AnonimizacionDeDatos {
+    domainVisionStatement = "Este contexto se enfoca en la eliminación de información sensible de las imágenes médicas, asegurando el cumplimiento de normativas como HIPAA y GDPR."
+}
+
+BoundedContext VerificacionContext implements VerificacionYMapeoDeDatos {
+    domainVisionStatement = "Este contexto garantiza la calidad de los datos anonimizados mediante procesos de validación, asegurando su integridad y cumplimiento con estándares requeridos."
+}
+
+BoundedContext MapeoDeDatosContext implements VerificacionYMapeoDeDatos {
+    domainVisionStatement = "Este contexto se encarga de la organización y clasificación de los datos anonimizados, permitiendo su estructuración en categorías útiles para análisis y modelado de IA."
+}
+
+BoundedContext EjecucionDePipelinesYModelosContext implements EjecucionDePipelinesYModelos {
+    domainVisionStatement = "Este contexto ejecuta modelos de IA sobre datos anonimizados, generando información estructurada y metadatos útiles para investigación y desarrollo."
+}
+
+BoundedContext PersistenciaDeDatosContext implements PersistenciaDeDatos {
+    domainVisionStatement = "Este contexto permite la vinculación segura de datos clínicos anonimizados con historiales médicos mediante identificadores únicos, facilitando estudios longitudinales sin comprometer la privacidad del paciente."
+}
+
+BoundedContext STAStandardContext implements STAStandard {
+    domainVisionStatement = "Este contexto proporciona una plataforma de auto-servicio que permite a los desarrolladores de IA acceder a datos anonimizados de manera eficiente y estructurada."
+}
+
+BoundedContext STAProContext implements STAPro {
+    domainVisionStatement = "Este contexto permite la administración de ambientes en la nube personalizables por el cliente, con soporte para consultas SQL y acceso dedicado a conjuntos de datos específicos."
+}
+
+BoundedContext STAEnterpriseContext implements STAEnterprise {
+    domainVisionStatement = "Este contexto ofrece una solución integral combinando acceso avanzado a datos, herramientas especializadas y soporte experto para la personalización de modelos de IA según necesidades específicas del cliente."
+}
+
+BoundedContext GestionDeUsuariosYCuentasContext implements GestionDeUsuariosYCuentas {
+    domainVisionStatement = "Este contexto administra la autenticación, autorización y gestión de suscripciones dentro de la plataforma, garantizando un acceso seguro y controlado a los servicios de STA."
+}
+
+BoundedContext GestionDeVentasYClientesContext implements GestionDeVentasYClientes {
+    domainVisionStatement = "Este contexto facilita la adquisición y gestión de clientes mediante procesos comerciales, negociación de acuerdos y personalización de servicios acorde a las necesidades de cada cliente."
+}
+
+ContextMap SaludTechAsIsContextMap {
+	type = SYSTEM_LANDSCAPE
+  	state = AS_IS
+
+    contains AlmacenamientoEnLaNubeContext
+    contains RecepcionYProcesamientoDeDatosContext
+    contains AnonimizacionDeDatosContext
+    contains VerificacionContext
+    contains MapeoDeDatosContext
+    contains EjecucionDePipelinesYModelosContext
+    contains PersistenciaDeDatosContext
+    contains STAStandardContext
+    contains STAProContext
+    contains STAEnterpriseContext
+    contains GestionDeUsuariosYCuentasContext
+    contains GestionDeVentasYClientesContext
+
+    RecepcionYProcesamientoDeDatosContext -> AnonimizacionDeDatosContext
+    AnonimizacionDeDatosContext -> VerificacionContext
+    VerificacionContext -> MapeoDeDatosContext
+    MapeoDeDatosContext -> EjecucionDePipelinesYModelosContext
+    EjecucionDePipelinesYModelosContext -> AlmacenamientoEnLaNubeContext
+    AlmacenamientoEnLaNubeContext -> PersistenciaDeDatosContext
+    STAStandardContext -> GestionDeUsuariosYCuentasContext
+    STAProContext -> GestionDeUsuariosYCuentasContext
+    STAEnterpriseContext -> GestionDeUsuariosYCuentasContext
+    GestionDeVentasYClientesContext -> STAProContext
+    GestionDeVentasYClientesContext -> STAEnterpriseContext
+}
