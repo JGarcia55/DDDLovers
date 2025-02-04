@@ -1,6 +1,6 @@
 # Estructura del Proyecto SaludTech
 
-Este proyecto utiliza como base una plantilla preexistente para el correcto uso del repositorio en la plataforma Gitpod. Se han realizado ajustes en la configuración para asegurar su compatibilidad y se han creado los respectivos archivos .cml para la generación de modelos.
+Este proyecto utiliza como base una plantilla preexistente para el correcto uso del repositorio en la plataforma Gitpod. Se han realizado ajustes en la configuración para asegurar su compatibilidad y se han creado los respectivos archivos .cml para la generación de modelos. De igual manera dejamos el [**enlace al repositorio de github**](https://github.com/JGarcia55/DDDLovers) donde contrarás todo el código y la documentación realizada.
 
 ## Estructura del arbol del Proyecto
 
